@@ -1,0 +1,36 @@
+<center>
+<form action="/api/product" method="POST">
+    <div class="form-floating mb-2 col-sm-6">
+        <input id="Name" type="text" class="form-control" value="" name="name" placeholder="Name">
+        <label for="Name">Nombre</label>
+    </div>
+    <div class="form-floating col-sm-6">
+        <div class="input-group mb-2">
+            <span class="input-group-text">$</span>
+            <div class="form-floating col-sm-6">
+                <input type="number" class="form-control" id="price" name="price" placeholder="Price" aria-label="Amount (to the nearest dollar)">
+                <label for="floatingInput">Precio</label>
+            </div>
+            <span class="input-group-text">.00</span>
+        </div>
+    </div>
+    <div class="form-floating mb-2 col-sm-6">
+        <select class="form-select" id="floatingSelect" name="category" aria-label="Floating label select example">
+            <option selected>Selecciona una categoria</option>
+            <option>computers</option>
+            <option>phones</option>
+            <option>accesories</option>
+        </select>
+        <label for="floatingSelect">Categoria:</label>
+    </div>
+    <div class="form-floating mb-2 col-sm-6">
+        <textarea class="form-control" placeholder="Leave a description here" id="description" name="description" style="height: 100px"></textarea>
+        <label for="description">Descripción:</label>
+    </div>
+    <div class="form-floating mb-2 col-sm-6">
+        <input id="picture" type="text" class="form-control" value="" placeholder="Url for your picture" name="picture">
+        <label for="picture">Imagen</label>
+    </div>
+    <button class="w-50 btn btn-lg btn-primary" type="submit">Guardar</button>
+</form>
+</center>
